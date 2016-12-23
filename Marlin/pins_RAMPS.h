@@ -162,13 +162,13 @@
   #define RAMPS_D10_PIN 10
 #endif
 
-#define HEATER_0_PIN     RAMPS_D10_PIN
+#define HEATER_0_PIN     RAMPS_D9_PIN
 
 #if ENABLED(IS_RAMPS_EFB)                      // Hotend, Fan, Bed
-  #define FAN_PIN        RAMPS_D9_PIN
+  #define FAN_PIN        RAMPS_D10_PIN
   #define HEATER_BED_PIN RAMPS_D8_PIN
 #elif ENABLED(IS_RAMPS_EEF)                    // Hotend, Hotend, Fan
-  #define HEATER_1_PIN   RAMPS_D9_PIN
+  #define HEATER_1_PIN   RAMPS_D10_PIN
   #define FAN_PIN        RAMPS_D8_PIN
 #elif ENABLED(IS_RAMPS_EEB)                    // Hotend, Hotend, Bed
   #define HEATER_1_PIN   RAMPS_D9_PIN
